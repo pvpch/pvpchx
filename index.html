@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PvPCH Клан</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background-image"></div>
+  <div class="animated-strings">
+    <div class="string"></div>
+    <div class="string"></div>
+  </div>
+
+  <div class="container">
+    <!-- Кнопка меню -->
+    <button id="menu-button" class="minecraft-button">Меню</button>
+
+    <nav id="side-menu" class="side-menu">
+      <button id="close-menu" class="close-menu">× Закрыть меню</button>
+      <ul>
+        <li><button class="minecraft-button" data-info="Информация о клане: PvPCH — мощный клан с сильными игроками.">Информация</button></li>
+        <li><button class="minecraft-button" data-info="Администрация клана: Главный лидер, замы и модераторы.">Администрация</button></li>
+        <li><button class="minecraft-button" data-info="Правила клана: Уважение, честная игра, помощь новичкам.">Правила</button></li>
+        <li><button class="minecraft-button" data-info="Сервера: IP 123.45.67.89, PvP режим включен.">Сервера</button></li>
+        <li><button class="minecraft-button" data-info="Связь: Телеграмм @PvPCHClan">Связь</button></li>
+      </ul>
+    </nav>
+
+    <!-- Только Телеграмм, как просил -->
+    <div class="social-icons">
+      <a href="https://t.me/PvPCHClan" target="_blank" rel="noopener noreferrer" title="Телеграмм клана">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+      </a>
+    </div>
+
+    <!-- Дополнительные кнопки функций -->
+    <div class="button-grid" style="margin-top: 30px;">
+      <button class="minecraft-button" onclick="alert('Функция: Статистика игроков (пока пусто)')">Статистика</button>
+      <button class="minecraft-button" onclick="alert('Функция: Обновления клана')">Обновления</button>
+      <button class="minecraft-button" onclick="alert('Функция: Форум клана')">Форум</button>
+      <button class="minecraft-button" onclick="alert('Функция: Помощь новичкам')">Помощь</button>
+    </div>
+
+    <div id="mc-server-status">Статус сервера: Онлайн</div>
+  </div>
+
+  <!-- Попап -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Текст попапа</p>
+      <button id="popup-close" class="minecraft-button">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
